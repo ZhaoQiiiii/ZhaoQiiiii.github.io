@@ -321,11 +321,12 @@ html.dark .progress-bar {
 .hero-photo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.profile-photo,
 .profile-placeholder {
+    display: grid;
+    place-items: center;
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -336,8 +337,19 @@ html.dark .progress-bar {
         0 24px 70px -15px rgba(30, 64, 175, 0.50);
 }
 
+.profile-frame {
+    width: 230px;
+    border: 1px solid #cbd5e1;
+    border-radius: var(--radius);
+    background: transparent;
+    overflow: hidden;
+    transform: translateX(-72px);
+}
+
 .profile-photo {
-    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .profile-placeholder {
@@ -622,6 +634,7 @@ html.js .reveal.visible {
         gap: 36px;
     }
     .hero-photo { justify-content: flex-start; }
+    .profile-frame { transform: none; }
     .hero-section { padding-top: 44px; }
 }
 
@@ -644,8 +657,8 @@ html.js .reveal.visible {
     .nav-inner,
     .page { padding-left: 16px; padding-right: 16px; }
     .site-footer { padding-left: 16px; padding-right: 16px; }
-    .profile-photo,
     .profile-placeholder { width: 180px; height: 180px; }
+    .profile-frame { width: 190px; }
     .icon-btn { width: 40px; height: 40px; }
     .footer-inner { flex-direction: column; align-items: flex-start; }
     .back-to-top { right: 16px; bottom: 16px; }
@@ -653,6 +666,7 @@ html.js .reveal.visible {
 
 /* ===== dark-mode component overrides ===== */
 html.dark .profile-placeholder { border-color: #334155; }
+html.dark .profile-frame { border-color: #30363d; }
 html.dark .exp-logo { border-color: #334155; }
 html.dark .thumb { background: linear-gradient(135deg, #020617 0%, #0f172a 100%); }
 html.dark .skip-link { color: #0d1117; }

@@ -33,7 +33,7 @@
         site.css, site.js       page CSS and JS
         assets/figures/         images, videos, logos, and the portrait
         assets/files/           CV and other page documents
-        work/                   independent subpages; copy work/_template/
+        works/                  independent subpages; copy works/_template/
     -->
 
     <a class="skip-link" href="#main">Skip to content</a>
@@ -100,7 +100,9 @@
             </div>
 
             <div class="hero-photo">
-                <img class="profile-photo" src="assets/figures/portrait.jpg" alt="ZhaoQi Wang">
+                <div class="profile-frame">
+                    <img class="profile-photo" src="assets/figures/portrait.png" alt="ZhaoQi Wang">
+                </div>
             </div>
         </div>
     </section>
@@ -110,9 +112,9 @@
         <h2 class="section-title" id="publications-title">Publications</h2>
 
         <!-- TODO: duplicate .pcard for each paper.
-             Paper media: put the teaser in work/<paper-slug>/assets/images/ and the PDF/BibTeX in
-             work/<paper-slug>/assets/files/. Replace the .thumb span with
-             <img class="thumb-media" src="./work/<paper-slug>/assets/images/teaser.png" alt="">. -->
+             Paper media: put the teaser in works/<paper-slug>/assets/images/ and the PDF/BibTeX in
+             works/<paper-slug>/assets/files/. Replace the .thumb span with
+             <img class="thumb-media" src="./works/<paper-slug>/assets/images/teaser.png" alt="">. -->
         <div class="card-list">
             <article class="pcard">
                 <div class="thumb" aria-hidden="true"><span>[Teaser]</span></div>
@@ -161,8 +163,8 @@
         <h2 class="section-title" id="projects-title">Projects</h2>
 
         <!-- TODO: duplicate .pcard for each project.
-             Project pages: copy work/_template/ to work/<page-slug>/ and link the card
-             to ./work/<page-slug>/. -->
+             Project pages: copy works/_template/ to works/<page-slug>/ and link the card
+             to ./works/<page-slug>/. -->
         <div class="card-list">
             <article class="pcard">
                 <div class="thumb" aria-hidden="true"><span>[Visual]</span></div>
