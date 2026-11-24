@@ -60,28 +60,6 @@
         reveals.forEach(function (el) { observer.observe(el); });
     }
 
-    /* ---------- theme toggle ---------- */
-    var themeToggle = document.getElementById('themeToggle');
-    var themeIcon = themeToggle ? themeToggle.querySelector('.theme-icon') : null;
-
-    function syncTheme() {
-        var dark = document.documentElement.classList.contains('dark');
-        if (themeIcon) themeIcon.textContent = dark ? '☀' : '☾';
-        if (themeToggle) {
-            themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-            themeToggle.setAttribute('aria-pressed', String(dark));
-        }
-    }
-
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-            var dark = document.documentElement.classList.toggle('dark');
-            try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
-            syncTheme();
-        });
-        syncTheme();
-    }
-
     /* ---------- WeChat: click to copy ID ---------- */
     var wechatBtn = document.getElementById('wechatBtn');
     if (wechatBtn) {

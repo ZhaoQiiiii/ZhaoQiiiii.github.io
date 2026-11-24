@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZhaoQi Wang</title>
+    <meta name="color-scheme" content="light">
+    <title>Zhaoqi Wang</title>
     <meta name="description" content="Personal homepage of Zhaoqi Wang (inno) — [one-line research statement].">
 
     <link rel="icon" href="./assets/figures/icon.svg">
@@ -12,16 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <script>
-        (function () {
-            try {
-                var saved = localStorage.getItem('theme');
-                var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (dark) document.documentElement.classList.add('dark');
-            } catch (e) {}
-        })();
-    </script>
 
     <link rel="stylesheet" href="site.css">
     <script src="site.js" defer></script>
@@ -48,9 +39,6 @@
                     <a href="#projects">Projects</a>
                     <a href="#experience">Experience</a>
                 </div>
-                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-                    <span class="theme-icon" aria-hidden="true">☾</span>
-                </button>
             </div>
         </div>
     </nav>
@@ -207,38 +195,37 @@
 
     <!-- ================== EXPERIENCE ================== -->
     <section id="experience" class="section reveal" aria-labelledby="experience-title">
-        <h2 class="section-title" id="experience-title">Education <span class="amp">&amp;</span> Experience</h2>
+        <h2 class="section-title" id="experience-title">Experience</h2>
 
         <!-- TODO: replace rows; add or delete .exp-row as needed. Keep this logo / info / date layout. -->
         <div class="exp-list">
             <div class="exp-row">
-                <div class="exp-logo" aria-hidden="true">[Logo]</div>
+                <div class="exp-logo" aria-hidden="true"><img src="assets/figures/logo-diffrobot.png" alt="" loading="lazy"></div>
                 <div class="exp-info">
-                    <b>[Organization]</b>
-                    <p class="role">[Role / Program]</p>
-                    <p>[Advisor, group, or one-line note]</p>
+                    <b>Differential Robotics (Hangzhou)</b>
+                    <p class="role">Robotics LLM Engineer · Frontier Innovation Lab</p>
                 </div>
-                <div class="exp-date">[YYYY.MM — YYYY.MM]</div>
+                <div class="exp-date">2025.8 — 2026.11</div>
             </div>
 
             <div class="exp-row">
-                <div class="exp-logo" aria-hidden="true">[Logo]</div>
+                <div class="exp-logo" aria-hidden="true"><img src="assets/figures/logo-bit.png" alt="" loading="lazy"></div>
                 <div class="exp-info">
-                    <b>[Organization]</b>
-                    <p class="role">[Role / Program]</p>
-                    <p>[Advisor, group, or one-line note]</p>
+                    <b>Beijing Institute of Technology</b>
+                    <p class="role">M.S. in Control Science and Engineering, School of Automation</p>
+                    <p>Advisor: <a href="https://ac.bit.edu.cn/szdw/jsml/mssbyznxtyjs1/97d1ce88418b416481f03322cf511b70.htm" target="_blank" rel="noopener">Minggang Gan</a></p>
                 </div>
-                <div class="exp-date">[YYYY.MM — YYYY.MM]</div>
+                <div class="exp-date">2022.9 — 2025.7</div>
             </div>
 
             <div class="exp-row">
-                <div class="exp-logo" aria-hidden="true">[Logo]</div>
+                <div class="exp-logo" aria-hidden="true"><img class="logo-ahu" src="assets/figures/logo-ahu.png" alt="" loading="lazy"></div>
                 <div class="exp-info">
-                    <b>[Organization]</b>
-                    <p class="role">[Role / Program]</p>
-                    <p>[Advisor, group, or one-line note]</p>
+                    <b>Anhui University</b>
+                    <p class="role">B.S. in Automation, School of Electrical Engineering and Automation</p>
+                    <p>GPA 3.74/4.0 · Rank 5% (7/128)</p>
                 </div>
-                <div class="exp-date">[YYYY.MM — YYYY.MM]</div>
+                <div class="exp-date">2018.9 — 2022.7</div>
             </div>
         </div>
     </section>
